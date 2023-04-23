@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import Logo from './Logo'
-import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon } from './Icons'
+import { TwitterIcon, GithubIcon, LinkedInIcon } from './Icons'
 import { motion } from 'framer-motion'
 
 const Navbar = () => {
@@ -13,6 +13,8 @@ const Navbar = () => {
     }
 
     const router = useRouter();
+
+
     const CustomLink = ({ href, title, className = '' }) => {
         return (
             <Link href={href} className={`${className} relative group`}>
@@ -63,26 +65,26 @@ const Navbar = () => {
                 </nav>
 
                 <nav className='flex justify-center items-center flex-wrap'>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    <motion.a href='https://twitter.com/DakshSingh9072' target={'_blank'}
                         className='w-7 mx-4'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
                         <TwitterIcon />
                     </motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    <motion.a href='https://github.com/DakshCodes' target={'_blank'}
                         className='w-7 mx-4'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
                         <GithubIcon />
                     </motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
-                        className='w-7 ml-4'
+                    <motion.a href='https://www.linkedin.com/in/daksh-singh-128a91246/' target={'_blank'}
+                        className='w-7 ml-4 rounded-full'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
-                        <PinterestIcon />
+                        <LinkedInIcon />
                     </motion.a>
                 </nav>
             </div>
@@ -91,9 +93,9 @@ const Navbar = () => {
                 isopen ?
 
                     <motion.div
-                    initial={{scale:0,opacity:0,x:"-50%",y:"-50%"}}
-                    animate={{scale:1,opacity:1}}
-                    className='min-w-[75vw]  flex flex-col  justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg  backdrop-blur-md py-32 '>
+                        initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        className='min-w-[75vw]  flex flex-col  justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg  backdrop-blur-md py-32 '>
                         <nav className='flex items-center flex-col justify-center '>
                             <CustomMobileLink href='/' title="Home" className='' toggle={handleClick} />
                             <CustomMobileLink href='/about' title="About" className='' toggle={handleClick} />
@@ -121,7 +123,7 @@ const Navbar = () => {
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                <PinterestIcon />
+                                <LinkedInIcon />
                             </motion.a>
                         </nav>
                     </motion.div>

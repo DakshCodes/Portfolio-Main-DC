@@ -7,17 +7,17 @@ const Logo = () => {
   return (
     <>
       <div className='flex items-center justify-center mt-2'>
-        <MotionLink href='/' className='bg-dark h-[60px] md:h-[65px] md:w-[65px] w-[60px] text-light flex justify-center
+        <MotionLink href='/' className=' h-[100px] md:h-[10px] md:w-[100px] w-[100px] text-light flex justify-center
        items-center rounded-full text-2xl font-bold '
 
-          whileHover={{
-            backgroundColor: ["#121212", "rgba(131,58,180,1)", "rgba(253,29,29,1)", "rgba(252,176,69,1)", "rgba(131,58,180,1)", "#121212"],
-          }}
-          transition={{ duration: 1, repeat: Infinity }}
+          // whileHover={{
+          //   backgroundColor: ["#121212", "rgba(131,58,180,1)", "rgba(253,29,29,1)", "rgba(252,176,69,1)", "rgba(131,58,180,1)", "#121212"],
+          // }}
+          // transition={{ duration: 1, repeat: Infinity }}
         >
-          <svg  xmlns="http://www.w3.org/2000/svg" viewBox="-13 2 85.76 46.58">
+          <svg  xmlns="http://www.w3.org/2000/svg" viewBox="-2 2 75.76 50.58">
             <defs>
-              <style>{".cls-1{fill:#fff}"}</style>
+              <style>{".cls-1{fill:#121212}"}</style>
             </defs>
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
