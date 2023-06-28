@@ -92,14 +92,14 @@ const projects = () => {
             description: "Food App in This User Registration and Authentication: Users can create accounts, log in, and manage their profiles. ",
             imgUrl: f4,
             liveUrl: 'https://hulu-clone-dc.vercel.app/',
-            githubUrl: "https://github.com/DakshCodes/Hulu-Clone-DC"
+            githubUrl: "https://github.com/DakshCodes/GoFood-Mern-DC"
 
         },
         {
             title: "Photo Gallery App",
             description: "In This App You can Upload Your Photos In Cloud As Safe And Download AnyWhere ",
             imgUrl: f4,
-            liveUrl: 'https://hulu-clone-dc.vercel.app/',
+            liveUrl: 'https://photo-gallery-mern-dc.vercel.app/',
             githubUrl: "https://github.com/DakshCodes/Photo-Gallery-Mern-Dc"
 
         },
