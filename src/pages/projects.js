@@ -17,9 +17,15 @@ import aniImg5 from "../../public/images/projects/a4.png";
 import aniImg6 from "../../public/images/projects/a5.png";
 import aniImg7 from "../../public/images/projects/a6.png";
 import f1 from "../../public/images/projects/f1.png";
-import f2 from "../../public/images/projects/f2.png";
+import f2 from "../../public/images/projects/Project-4a.png";
 import f3 from "../../public/images/projects/f3.png";
 import f4 from "../../public/images/projects/f4.png";
+import Cola from "../../public/images/projects/Cola.png";
+import Parallax from "../../public/images/projects/Parrallax.png";
+import Genics from "../../public/images/projects/Genics.png";
+import Tesla from "../../public/images/projects/Tesla.png";
+import Imdb from "../../public/images/projects/Imdb.jpg";
+import Youtube from "../../public/images/projects/Youtube.png";
 
 
 const FramerImage = motion(Image)
@@ -53,7 +59,7 @@ const Project = ({ type, title, img, link, github, description }) => {
                 </Link>
                 <p className='h-24 text-teal-500 font-light'>{description}</p>
                 <div className='mt-2 w-full flex items-center justify-between '>
-                    <Link className='underline rounded-lg  text-lg font-semibold md:text-base' href={github} target="_blank">Visit</Link>
+                    <Link className='underline rounded-lg  text-lg font-semibold md:text-base' href={link} target="_blank">Visit</Link>
                     <Link className='w-8 md:w-6' href={github} target="_blank"><GithubIcon /></Link>
                 </div>
             </div>
@@ -68,16 +74,23 @@ const projects = () => {
             title: "FamilyCircle Chat App",
             description: "User Registration and Authentication: Users can create accounts, log in, and manage their profiles. Authentication ensures secure access to the application and personalization of the user experience.",
             imgUrl: f1,
-            liveUrl: 'https://faimly-circle-chat-dc.vercel.app/',
-            githubUrl: "https://github.com/DakshCodes/Faimly-Circle-Chat-DC"
+            liveUrl: 'https://faimly-circle-client.vercel.app/',
+            githubUrl: "https://github.com/DakshCodes/Faimly-Circle-Client"
 
         },
         {
-            title: "Blog Mad App",
-            description: "User Registration and Authentication: Users can create accounts, log in, and manage their profiles. Authentication ensures secure access to the application and personalization of the user experience.",
+            title: "TechPedia",
+            description: "This Is A Bloging Websites For Specefic Techinical or Programmer Pepoles There We Create Blog and inspire Everyone.",
             imgUrl: f2,
-            liveUrl: 'https://netflix-clone-dc.vercel.app/',
-            githubUrl: "https://github.com/DakshCodes/Blog-Mad-DC"
+            liveUrl: 'https://techpedia.vercel.app/',
+            githubUrl: "https://github.com/DakshCodes/TechPedia-Client"
+        },
+        {
+            title: "Genics-Shop",
+            description: "This Is A E-Commerce Websites For Buying And Selling Somthing In This.",
+            imgUrl: Genics,
+            liveUrl: 'https://genics-shop.vercel.app/',
+            githubUrl: "https://github.com/DakshCodes/Genics-Shop"
         },
         {
             title: "To-Do App",
@@ -88,11 +101,11 @@ const projects = () => {
 
         },
         {
-            title: "Go Food App",
-            description: "Food App in This User Registration and Authentication: Users can create accounts, log in, and manage their profiles. ",
-            imgUrl: f4,
-            liveUrl: 'https://hulu-clone-dc.vercel.app/',
-            githubUrl: "https://github.com/DakshCodes/GoFood-Mern-DC"
+            title: "New-Tube",
+            description: "A New Tube Website Which Contains Lots Of Videoa",
+            imgUrl: Youtube,
+            liveUrl: 'https://new-tube-app-dc.vercel.app/',
+            githubUrl: "https://github.com/DakshCodes/NewTube-App-DC"
 
         },
         {
@@ -102,15 +115,8 @@ const projects = () => {
             liveUrl: 'https://photo-gallery-mern-dc.vercel.app/',
             githubUrl: "https://github.com/DakshCodes/Photo-Gallery-Mern-Dc"
 
-        },
-        {
-            title: "Student Entry App",
-            description: "In This App You can Add Students And Do Crud Oprations ",
-            imgUrl: aniImg6,
-            liveUrl: 'https://hulu-clone-dc.vercel.app/',
-            githubUrl: "https://github.com/DakshCodes/Student-Entery-DC"
+        }
 
-        },
 
     ];
     const animation = [
@@ -151,6 +157,20 @@ const projects = () => {
             githubUrl: "https://github.com/DakshCodes/Paper-Landing-DC"
         },
         {
+            title: "Coca-Cola Page",
+            description: "A Animated Coca-Cola HomePage",
+            imgUrl: Cola,
+            liveUrl: 'https://coca-cola-seven.vercel.app/',
+            githubUrl: "https://github.com/DakshCodes/Coca-Cola-Dc"
+        },
+        {
+            title: "Parllax-Rajasthan",
+            description: "A Animated Parrallax HomePage",
+            imgUrl: Parallax,
+            liveUrl: 'https://parallax-dc.vercel.app/',
+            githubUrl: "https://github.com/DakshCodes/Parallax-Dc"
+        },
+        {
             title: "Lamp NavBar ",
             description: "A Animated Lamp Navbar",
             imgUrl: aniImg2,
@@ -163,14 +183,14 @@ const projects = () => {
         {
             title: "Imdb-Clone",
             description: "It is Amazing Website For Movies",
-            imgUrl: aniImg2,
+            imgUrl: Imdb,
             liveUrl: 'https://imdb-clone-zeta-tan.vercel.app/',
             githubUrl: "https://github.com/DakshCodes/Imdb-Clone-DC"
         },
         {
             title: "Tesla-Clone",
             description: "It is Tesla Automobiles Componey Clone",
-            imgUrl: aniImg1,
+            imgUrl: Tesla,
             liveUrl: 'https://tesla-clone-pi-kohl.vercel.app/',
             githubUrl: "https://github.com/DakshCodes/Tesla-Clone-DC"
         },
@@ -229,6 +249,7 @@ const projects = () => {
                                             img={project.imgUrl}
                                             link={project.liveUrl}
                                             title={project.title}
+                                            description={project.description}
                                             type='Animations Project'
                                         />
                                     )
@@ -251,6 +272,7 @@ const projects = () => {
                                             img={project.imgUrl}
                                             link={project.liveUrl}
                                             title={project.title}
+                                            description={project.description}
                                             type='Frontend Project'
                                         />
                                     )
