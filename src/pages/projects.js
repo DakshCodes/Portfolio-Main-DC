@@ -160,7 +160,7 @@ const projects = () => {
             title: "Coca-Cola Page",
             description: "A Animated Coca-Cola HomePage",
             imgUrl: Cola,
-            liveUrl: 'https://coca-cola-seven.vercel.app/',
+            liveUrl: 'https://coca-cola-ten.vercel.app/',
             githubUrl: "https://github.com/DakshCodes/Coca-Cola-Dc"
         },
         {
